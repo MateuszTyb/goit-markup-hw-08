@@ -1,5 +1,6 @@
-@import "./utils/_variables.scss";
+@import "./utils/variables";
 
+@import "./base/container";
 @import "./base/common";
 @import "./base/body";
 @import "./base/visually-hidden";

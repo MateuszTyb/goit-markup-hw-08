@@ -7,13 +7,24 @@
   align-items: center;
   margin: 0px auto;
 
+ @media screen and (max-width: 1200px) {
+  padding: 60px 0px;
+    
+    }
+
   &__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
-    color: getColor('header-primary');
+    color: getColor("header-primary");
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__header {
+      font-size: 28px;
+    }
   }
 
   &__list {
@@ -28,32 +39,37 @@
   }
 
   &__item {
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: auto;
-  }
-
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid getColor('decorative-secondary');
-    border-radius: 4px;
     width: 170px;
     height: 92px;
-    fill: getColor('decorative-secondary');
-    color: getColor('decorative-secondary');
+    border: 1px solid getColor("decorative-secondary");
+    border-radius: 4px;
+    fill: getColor("decorative-secondary");
+    color: getColor("decorative-secondary");
+
+    @media screen and (max-width: 768px) {
+      width: 210px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 226px;
+    }
 
     &:hover,
     &:focus {
-      border: 1px solid getColor('decorative-primary');
-      fill: getColor('decorative-primary');
-      color: getColor('decorative-primary');
+      border: 1px solid getColor("decorative-primary");
+      fill: getColor("decorative-primary");
+      color: getColor("decorative-primary");
       transition: color fill border;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 92px;
     }
   }
 }

@@ -7,10 +7,37 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/background/background.jpg");
+    url("../images/background/background-desktop.jpg");
   background-size: cover;
   background-position: center center;
   padding: 200px 0px;
+
+  @media screen and (max-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/background-mobile.jpg");
+    padding: 118px 15px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/background-tab.jpg");
+    padding: 118px 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/background-desktop.jpg");
+    padding: 200px 0px;
+  }
 
   &__header {
     max-width: 696px;
@@ -20,6 +47,14 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: getColor(header-secondary);
+  }
+
+  @media screen and (max-width: 1200px) {
+    &__header {
+      max-width: 396px;
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 
   &__btn {
