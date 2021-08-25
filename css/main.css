@@ -23,7 +23,7 @@
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0px 215px;
+    padding: 0px 15px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -646,10 +646,10 @@ body {
 }
 
 .about {
-  padding-bottom: 94px;
+  padding: 0px 15px 94px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .about {
     display: none;
   }
@@ -748,6 +748,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (max-width: 1200px) {
+  .employee__header {
+    font-size: 28px;
+  }
 }
 
 .employee__name {
