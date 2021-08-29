@@ -10,6 +10,11 @@
   padding: 40px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+@media screen and (max-width: 767px){
+  max-width: 450px;
+}
+    
+
   &__btn {
     margin: 30px auto 0px;
     padding: 10px 76px;
@@ -59,6 +64,7 @@
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
   }
 }
 
@@ -88,6 +94,9 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px){
+  width: 370px;}
 
     &:hover,
     &:focus {
@@ -126,6 +135,9 @@
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+      @media screen and (max-width: 767px){
+  width: 370px;}
+
     &:hover,
     &:focus {
       outline: none;
@@ -146,6 +158,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: vargetColor(article-primary);
+
+     @media screen and (max-width: 767px){
+  font-size: 12px;}
   }
 
   &__statute {
@@ -163,6 +178,10 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 767px){
+    width: 16px;
+    height: 15px;}
+      
     &:checked {
       fill: getColor(decorative-additional);
       color: getColor(decorative-additional);
