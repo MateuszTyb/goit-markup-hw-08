@@ -48,7 +48,20 @@
           <li class="gallery-portfolio__tile">
             <div class="gallery-portfolio__item">
               <div class="gallery-portfolio__photo">
-              <img src="./images/portfolio/img.jpg" width="370" height="294" alt="laptop z otwartą stroną intenetową" />
+                <picture>
+                  <source srcset="./images/portfolio/gallery-desktop1x(1).jpg 1x, ./images/portfolio/gallery-desktop2x(1).jpg 2x"
+                    media="(min-width:1200px)">
+                    <source srcset="./images/portfolio/gallery-desktop1x(1).webp 1x, ./images/portfolio/gallery-desktop2x(1).webp 2x"
+                    media="(min-width:1200px)" type="image/webp">
+                    <source srcset="./images/portfolio/gallery-tab1x(1).jpg 1x, ./images/portfolio/gallery-tab2x(1).jpg 2x"
+                    media="(min-width:768px)">
+                    <source srcset="./images/portfolio/gallery-tab1x(1).webp 1x, ./images/portfolio/gallery-tab2x(1).webp 2x"
+                    media="(min-width:768px)" type="image/webp">
+        
+                  <img src="./images/portfolio/gallery-mobilex(1).webp 1x, ./images/portfolio/gallery-mobile2x(1).webp 2x"
+                    srcset="./images/portfolio/gallery-mobilex(1).jpg 1x, ./images/portfolio/gallery-mobile2x(1).jpg 2x"
+                  
+                 alt="laptop z otwartą stroną intenetową" />
               <div class="gallery-portfolio__overlay">
                 <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                   wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
