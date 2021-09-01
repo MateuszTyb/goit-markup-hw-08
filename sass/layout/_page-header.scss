@@ -1,8 +1,8 @@
 .header {
-  max-width: 1600px;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 8px 15px;
   border-bottom: 1px solid #ececec;
 
@@ -16,12 +16,22 @@
     align-items: center;
     flex-wrap: wrap;
     column-gap: 30px;
+
+    @media screen and (max-width: 900px){
+flex-direction: column;
+align-items: start;
+    }
+
+    @media screen and (max-width: 767px){display: none;}
+
+
   }
   &__pages {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 46px;
+    @media screen and (max-width: 767px){display: none;}
   }
 
   &__item {
@@ -48,13 +58,12 @@
   &__contact {
     font-weight: 500;
     font-size: 14px;
-    margin-right: 12px;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    margin: 16px 0px;
+    margin: 5px 0px;
     color: getColor(article-primary);
     fill: getColor(article-primary);
-    align-items: center;
+  
 
     &:hover,
     &:focus {

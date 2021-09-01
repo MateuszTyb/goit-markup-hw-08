@@ -7,6 +7,10 @@
   margin: 16px 93px 16px 0px;
   color: var(--secondary-color);
 
+   @media screen and (max-width: 1200px){
+margin: 16px 83px 16px 0px;
+   }
+   
   &__lighttheme {
     color: var(--main-color);
   }
