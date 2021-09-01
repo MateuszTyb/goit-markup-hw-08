@@ -446,12 +446,6 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__contactslist {
-    display: none;
-  }
-}
-
 .header__pages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,12 +457,6 @@ body {
       flex-wrap: wrap;
   -webkit-column-gap: 46px;
           column-gap: 46px;
-}
-
-@media screen and (max-width: 767px) {
-  .header__pages {
-    display: none;
-  }
 }
 
 .header__item {

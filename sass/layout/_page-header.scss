@@ -22,8 +22,6 @@ flex-direction: column;
 align-items: start;
     }
 
-    @media screen and (max-width: 767px){display: none;}
-
 
   }
   &__pages {
@@ -31,7 +29,6 @@ align-items: start;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 46px;
-    @media screen and (max-width: 767px){display: none;}
   }
 
   &__item {
