@@ -122,6 +122,12 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .logo {
+    margin: 16px 0px 16px 0px;
+  }
+}
+
 .logo__lighttheme {
   color: var(--main-color);
 }
@@ -132,8 +138,8 @@ body {
 
 .backdrop {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   left: 0;
@@ -1456,7 +1462,7 @@ body {
   color: #212121;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu__btn {
     display: none;
   }
