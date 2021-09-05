@@ -10,19 +10,14 @@
   }
 
   &__tile {
-    max-width: 270px;
+    max-width: 450px;
     margin: 10px 15px;
-  }
 
-  @media screen and (max-width: 768px) {
-    &__tile {
-      max-width: 450px;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    &__tile {
+    @media screen and (min-width: 768px) {
       max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
     }
   }
 

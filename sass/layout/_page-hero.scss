@@ -3,25 +3,15 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/background/background-desktop.jpg");
-  background-size: cover;
-  background-position: center center;
-  padding: 200px 0px;
+    url("../images/background/background-mobile.jpg");
+  padding: 118px 15px;
 
-  @media screen and (max-width: 768px) {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/background/background-mobile.jpg");
-    padding: 118px 15px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -40,20 +30,22 @@
   }
 
   &__header {
-    max-width: 696px;
+    max-width: 396px;
+    font-size: 26px;
+    line-height: 1.62;
+
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.364;
+
     text-align: center;
     letter-spacing: 0.06em;
     color: getColor(header-secondary);
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     &__header {
-      max-width: 396px;
-      font-size: 26px;
-      line-height: 1.62;
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.364;
     }
   }
 

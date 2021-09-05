@@ -1,9 +1,10 @@
 .about {
   padding: 0px 15px 94px;
-
-  @media screen and (max-width: 768px) {
   display: none;
-}
+
+  @media screen and (min-width: 769px) {
+    display: initial;
+  }
 
   &__header {
     font-weight: 700;
@@ -11,7 +12,7 @@
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
-    color: getColor('header-primary');
+    color: getColor("header-primary");
     margin-bottom: 40px;
   }
 
@@ -34,7 +35,7 @@
     width: 100%;
     left: 0%;
     bottom: 0%;
-    color: getColor('article-secondary');
+    color: getColor("article-secondary");
     background-color: rgba(47, 48, 58, 0.8);
     font-weight: bold;
     font-size: 14px;

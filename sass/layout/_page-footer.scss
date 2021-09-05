@@ -2,31 +2,27 @@
   max-width: 1600px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: baseline;
   padding: 60px 15px;
   background: getColor(bg-primary);
 
-  @media screen and (max-width: 1200px) {
-    justify-content: space-around;
-    align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
 }
 
 .footer-address {
   text-decoration: none;
   color: getColor(article-secondary);
-  margin-right: 70px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
 
-  @media screen and (max-width: 1200px) {
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-    justify-content: center;
-    margin: 0;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    justify-content: start;
+    margin-right: 70px;
   }
   &__list {
     margin-top: 26px;
@@ -67,16 +63,16 @@
 }
 
 .footer-social {
-  display: block;
-  justify-content: left;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 60px;
 
-  @media screen and (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    justify-content: left;
+    align-items: center;
   }
   &__title {
     font-size: 14px;
@@ -118,12 +114,14 @@
 }
 
 .footer-newsletter {
-  margin-left: 78px;
+  text-align: center;
+  justify-content: center;
+  margin: 60px 0 0 0;
 
-  @media screen and (max-width: 1200px) {
-    text-align: center;
-    justify-content: center;
+  @media screen and (min-width: 1200px) {
     margin: 60px 0 0 0;
+    margin-left: 78px;
+    text-align: left;
   }
 
   &__title {
@@ -139,10 +137,9 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
-
-    @media screen and (max-width: 1200px) {
-      display: flex;
-      flex-direction: column;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
     }
   }
 
@@ -169,7 +166,8 @@
   }
 
   &__email {
-    width: 358px;
+    width: 93.75vw;
+    margin: 0 15;
     height: 50px;
     padding: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -178,13 +176,12 @@
     color: getColor(header-secondary);
     background: getColor(bg-primary);
 
-    @media screen and (max-width: 1200px) {
-      width: 450p;
+    @media screen and (min-width: 480px) {
+      width: 450px;
     }
 
-    @media screen and (max-width: 480px) {
-      width: 93.75vw;
-      margin: 0 15;
+    @media screen and (min-width: 1200px) {
+      width: 358px;
     }
   }
 }

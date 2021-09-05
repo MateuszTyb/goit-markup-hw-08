@@ -13,31 +13,31 @@
   }
   &__contactslist {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     column-gap: 30px;
+    align-items: center;
+    display: none;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
+      display: inherit;
+      align-items: flex-start;
       flex-direction: column;
-      align-items: start;
     }
-
-@media screen and (max-width: 768px)
-{display: none;
-
-  }
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      flex-direction: row;
+    }
   }
   &__pages {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 46px;
+    display: none;
 
-    @media screen and (max-width: 768px)
-{display: none;
-
-  }
-
+    @media screen and (min-width: 768px) {
+      display: inherit;
+    }
   }
 
   &__item {
