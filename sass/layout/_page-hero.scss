@@ -2,8 +2,9 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: column;
-
+  flex-direction: column; 
+  background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)

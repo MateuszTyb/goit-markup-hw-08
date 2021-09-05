@@ -27,7 +27,7 @@
       </ul>
     </nav>
     <ul class="header__contactslist list">
-      <li class="header__contact"><a class="header__" href="mailto:info@devstudio.com"><svg class="header__icon"
+      <li class="header__contact"><a class="link" href="mailto:info@devstudio.com"><svg class="header__icon"
             width=20 height=16>
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg><span>info@devstudio.com</span></a></li>
@@ -36,10 +36,43 @@
             <use href="./images/icons.svg#icon-smartphone"></use>
           </svg>+48 111 111 111</a></li>
     </ul>
-       <button class="menu__btn" type="button" data-menu-open>
-        </button>
+    </div>
+    <button type="button" class="menu__btn" aria-expanded="false" aria-controls="menu" data-menu-button>
+   <use class="menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
+   <use class="menu__icon-close" href="./images/icons.svg#icon-close_menu"></use>
+    </button>
+   <div class="menu is-open" data-menu="">
+            <ul class="menu-navigation list">
+              <li class="menu-navigation__item">
+                <a class="menu-navigation__link" href="./index.html">Agencja</a>
+              </li>
+              <li class="menu-navigation__item">
+                <a class="menu-navigation__link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="menu-navigation__item">
+                <a class="menu-navigation__link" href="">Kontakt</a>
+              </li>
+            </ul>
+            <ul class="menu-contact list">
+              <li class="menu-contact__item">
+                  <li class="menu-contact__item">
+                <a class="menu-contact__phone" href="+48111111111">
+                
+                 +48 111 111 111</a>
+              </li>
+                <a class="menu-contact__mail" href="mailto:info@devstudio.com">
+    
+                  info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-social list">
+              <li class="menu-social__link"><a href="Instagram">Instagram</a></li>
+              <li class="menu-social__link"><a href="Tweeter">Tweeter</a></li>
+              <li class="menu-social__link"><a href="Facebook">Facebook</a></li>
+              <li class="menu-social__link"><a href="Linkedin">Linkedin</a></li>
+            </ul>
+          </div>
   </header>
-
   <section class="hero">
     <h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
     <button class="hero__btn" type="button" data-modal-open>Zamów usługe</button>
@@ -273,7 +306,7 @@
 
       </li>
       <li class="employee__tile">
-        <picture  class="employee__photo">
+        <picture class="employee__photo">
           <source srcset="./images/employers/employee4desk1x.jpg 1x, ./images/employers/employee4desk2x.jpg 2x"
             media="(min-width:1200px)">
           <source srcset="./images/employers/employee4desk1x.webp 1x, ./images/employers/employee4desk2x.webp 2x"
@@ -386,6 +419,7 @@
     </div>
   </footer>
   <script src="./modal.js"></script>
+  <script src="./menu.js"></script>
 </body>
 
 </html>
